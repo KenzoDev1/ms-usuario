@@ -8,7 +8,7 @@ import org.springframework.hateoas.server.core.Relation;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder //Crear objetos de manera flexible = Constructor Flex
+@Builder
 @Relation(collectionRelation = "usuarios", itemRelation = "usuario")
 public class Usuario {
     @Id
@@ -16,5 +16,5 @@ public class Usuario {
     private long id;
     private String nombre;
     private String correo;
-    private String rol; // ADMIN, GERENTE, Usuario
+    private String rol;
 }
